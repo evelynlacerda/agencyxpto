@@ -8,41 +8,46 @@
     <title>Agência</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/root.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="index.html">
+        <a href="index.html" class="logo">
             <img src="./src/img/cafe.gif" alt="Logo Agência">
-            <span class="cabecalho__title">Agência XPTO</span>
+            <span>Agência XPTO</span>
         </a>
-        <nav class="cabecalho__nagevação">
+        <nav class="cabecalho__nav">
             <ul>
-                <li class="cabecalho__links">
+                <li>
                     <a href="projetos.html">Projetos</a>
                 </li>
-                <li class="cabecalho__links">
+                <li>
                     <a href="about.html">Quem Somos</a>
                 </li>
-                <li class="cabecalho__links">
+                <li>
                     <a href="contato.html">contato</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section class="container__projetos">
             <h1>Nossos Projetos</h1>
             <div class="projetos__img img1 show"></div>
             <div class="projetos__img img2"></div>
             <div class="projetos__img img3"></div>
+
+            <a href="#" id="btn-back" class="seta btn-back">Voltar</a>
+            <a href="#" id="btn-next" class="seta btn-next">Avançar</a>
         </section>
 
-        <section>
-            <div class="about__content">
-                <div class="about__description">
+        <section class="descricao">
+            <div class="descricao__content">
+                <div class="descricao__sobre">
                     <h1>Quem Somos?</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur dolorum itaque officiis
                         cupiditate nemo enim et laudantium, accusamus, ullam minima asperiores optio culpa atque maxime
@@ -55,12 +60,10 @@
 
     <footer class="footer__content">
         <nav class="footer__nav">
-            <div class="footer__logo">
-                <a href="index.html">
-                    <img src="./src/img/cafe.gif" alt="Logo XPTO">
-                    <span>Agência XPTO</span>
-                </a>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="./src/img/cafe.gif" alt="Logo XPTO">
+                <span>Agência XPTO</span>
+            </a>
             <div class="footer__socials">
                 <a href="#">
                     <i class="fa-brands fa-instagram"></i>
