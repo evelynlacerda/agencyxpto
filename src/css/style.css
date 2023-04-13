@@ -1,7 +1,3 @@
-body {
-    font-family: 'Public Sans', sans-serif;
-}
-
 .cabecalho {
     max-width: 1000px;
     display: flex;
@@ -19,7 +15,7 @@ body {
 }
 
 .logo:hover {
-    color: var(--hover);
+    color: var(--flaming);
 }
 
 .logo img {
@@ -57,10 +53,11 @@ body {
     height: 700px;
     position: relative;
 }
+
 .container__projetos h1 {
-    color: #f1ab82;
+    color: var(--white);
     font-size: calc(3.2rem + 1vw);
-    font-family: 'Caveat', cursive;
+    font-weight: 700;
     text-shadow: 0 6px 6px rgba(0, 0, 0, .3);
 }
 
@@ -79,9 +76,11 @@ body {
 .projetos__img.img1 {
     background-image: url('../img/painel1.jpg');
 }
+
 .projetos__img.img2 {
     background-image: url('../img/painel2.jpg');
 }
+
 .projetos__img.img3 {
     background-image: url('../img/painel3.jpg');
 }
@@ -124,7 +123,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 18rem;
+    margin: 0 12rem 0 18rem;
 }
 
 .descricao__sobre {
@@ -140,10 +139,10 @@ body {
 }
 
 .descricao__sobre p {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: justify;
-    color: #cccccc;
-    line-height: 3.8rem;
+    color: var(--light300);
+    font-weight: 300;
 }
 
 .descricao__content img {
@@ -157,7 +156,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 3.2rem;
-    margin: 2.4rem auto 3.2rem ;
+    margin: 2.4rem auto 3.2rem;
 }
 
 .footer__nav {
@@ -178,17 +177,121 @@ body {
     padding: 1.5rem;
     width: 6.2rem;
     font-size: 3rem;
-    color: white;
-    background-color: var(--dark700);
+    color: var(--dark700);
+    border: 2px solid var(--dark700);
     border-radius: 50%;
     transition: .3s ease-in-out;
 }
 
 .footer__socials a:hover {
-    background-color: #FF5678;
+    color: var(--white);
+    background-color: var(--flaming);
+    border-color: var(--flaming);
 }
 
 .footer__content p {
     color: var(--dark700);
     font-size: 1.6rem;
+}
+
+@media(max-width: 1075px) {
+
+    .cabecalho,
+    .footer__content {
+        margin-left: calc(5rem + 1vw);
+        margin-right: calc(5rem + 1vw);
+    }
+
+    .cabecalho nav ul {
+        gap: 1.2rem;
+    }
+
+    .container__projetos {
+        height: 500px;
+    }
+
+    .descricao__content {
+        padding: 8rem 4rem;
+        margin: 0;
+    }
+
+    .descricao__sobre,
+    .descricao__sobre p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .descricao__content img {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .cabecalho,
+    .footer__content,
+    .footer__nav {
+        margin-left: calc(3rem + 1vw);
+        margin-right: calc(3rem + 1vw);
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .logo {
+        gap: 1rem;
+    }
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .cabecalho nav ul {
+        gap: 2rem;
+    }
+
+    .cabecalho nav ul li a {
+        font-size: calc(1.2rem + 1vw);
+        padding: 1.2rem;
+    }
+
+    .footer__socials {
+        margin-left: calc(1rem + 1vw);
+        margin-right: calc(1rem + 1vw);
+        gap: 6rem;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .cabecalho,
+    .footer__content,
+    .footer__nav {
+        margin-left: calc(1rem + 1vw);
+        margin-right: calc(1rem + 1vw);
+    }
+
+    .logo img {
+        width: 8rem;
+    }
+
+    .cabecalho nav ul {
+        gap: .8rem;
+    }
+
+    .container__projetos .seta {
+        display: none;
+    }
+
+    .descricao__content {
+        padding: 10rem 2rem;
+    }
+
+    .descricao__sobre h1 {
+        font-size: calc(3.2rem + 1vw);
+    }
+
+    .footer__socials {
+        gap: 5rem;
+    }
 }

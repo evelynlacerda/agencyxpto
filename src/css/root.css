@@ -1,14 +1,14 @@
 /* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-
 /* COLORS */
 :root {
+    --white: #ffffff;
+    --light300: #cccccc;
     --dark700: #252525;
     --dark800: #151515;
     --blue: #2941AB;
     --green: #1ED760;
 
-    --hover: #FF5678;
+    --flaming: #FF5678;
 }
