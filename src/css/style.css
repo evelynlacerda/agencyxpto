@@ -69,7 +69,7 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
-    filter: brightness(70%);
+    filter: contrast(70%);
     transition: .5s ease-in-out;
 }
 
@@ -112,6 +112,10 @@
 
 .container__projetos .seta.btn-next {
     right: 4rem;
+}
+
+.show {
+    opacity: 1;
 }
 
 /* QUEM SOMOS - DESCRIÇÃO */
