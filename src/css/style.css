@@ -1,4 +1,4 @@
-.cabecalho {
+.header {
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -28,12 +28,12 @@
     font-weight: 800;
 }
 
-.cabecalho ul {
+.header ul {
     display: flex;
     gap: 2.4rem;
 }
 
-.cabecalho nav ul li a {
+.header nav ul li a {
     padding: 2rem 2.2rem;
     font-size: 1.6rem;
     font-weight: 500;
@@ -41,12 +41,12 @@
     transition: .2s ease-in-out;
 }
 
-.cabecalho nav ul li a:hover {
+.header nav ul li a:hover {
     background-color: var(--green);
 }
 
 /* PROJETOS - CONTEÚDO PRINCIPAL */
-.container__projetos {
+.container__projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,14 +55,14 @@
     overflow: auto;
 }
 
-.container__projetos h1 {
+.container__projects h1 {
     color: var(--white);
     font-size: calc(2.8rem + 1vw);
     font-weight: 700;
     text-shadow: 0 6px 6px rgba(0, 0, 0, .3);
 }
 
-.projetos__img {
+.project-image {
     background: no-repeat center;
     background-size: cover;
     min-width: 100%;
@@ -74,23 +74,23 @@
     transition: .5s ease-in-out;
 }
 
-.projetos__img.img1 {
+.project-image.img1 {
     background-image: url('../img/painel1.jpg');
 }
 
-.projetos__img.img2 {
+.project-image.img2 {
     background-image: url('../img/painel2.jpg');
 }
 
-.projetos__img.img3 {
+.project-image.img3 {
     background-image: url('../img/painel3.jpg');
 }
 
-.projetos__img.img1.show {
+.project-image.img1.show {
     opacity: 1;
 }
 
-.container__projetos .seta {
+.container__projects .arrow {
     background: url('../img/seta.png') no-repeat center;
     background-size: contain;
     width: 3rem;
@@ -102,16 +102,16 @@
     transition: .2s ease-in-out;
 }
 
-.container__projetos .seta:hover {
+.container__projects .arrow:hover {
     opacity: 50%;
 }
 
-.container__projetos .seta.btn-back {
+.container__projects .arrow.btn-back {
     left: 4rem;
     transform: rotate(180deg);
 }
 
-.container__projetos .seta.btn-next {
+.container__projects .arrow.btn-next {
     right: 4rem;
 }
 
@@ -120,37 +120,37 @@
 }
 
 /* QUEM SOMOS - DESCRIÇÃO */
-.descricao {
+.description {
     background-color: var(--blue);
 }
 
-.descricao__content {
+.description__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 12rem 0 18rem;
 }
 
-.descricao__sobre {
+.description__about {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     margin: 0 8rem 0 0;
 }
 
-.descricao__sobre h1 {
+.description__about h1 {
     font-size: 4rem;
     color: var(--green);
 }
 
-.descricao__sobre p {
+.description__about p {
     font-size: 2rem;
     text-align: justify;
     color: var(--light300);
     font-weight: 300;
 }
 
-.descricao__content img {
+.description__content img {
     width: 60%;
 }
 
@@ -201,39 +201,39 @@
 
 @media(max-width: 1075px) {
 
-    .cabecalho,
+    .header,
     .footer__content {
         margin-left: calc(5rem + 1vw);
         margin-right: calc(5rem + 1vw);
     }
 
-    .cabecalho nav ul {
+    .header nav ul {
         gap: 1.2rem;
     }
 
-    .container__projetos {
+    .container__projects {
         height: 500px;
     }
 
-    .descricao__content {
+    .description__content {
         padding: 8rem 4rem;
         margin: 0;
     }
 
-    .descricao__sobre,
-    .descricao__sobre p {
+    .description__about,
+    .description__about p {
         text-align: center;
         margin: 0;
     }
 
-    .descricao__content img {
+    .description__content img {
         display: none;
     }
 }
 
 @media(max-width: 800px) {
 
-    .cabecalho,
+    .header,
     .footer__content,
     .footer__nav {
         margin-left: calc(3rem + 1vw);
@@ -251,11 +251,11 @@
         width: 10rem;
     }
 
-    .cabecalho nav ul {
+    .header nav ul {
         gap: 2rem;
     }
 
-    .cabecalho nav ul li a {
+    .header nav ul li a {
         font-size: calc(1.2rem + 1vw);
         padding: 1.2rem;
     }
@@ -269,7 +269,7 @@
 
 @media(max-width: 500px) {
 
-    .cabecalho,
+    .header,
     .footer__content,
     .footer__nav {
         margin-left: calc(1rem + 1vw);
@@ -280,19 +280,19 @@
         width: 8rem;
     }
 
-    .cabecalho nav ul {
+    .header nav ul {
         gap: .8rem;
     }
 
-    .container__projetos .seta {
+    .container__projects .arrow {
         width: calc(2rem + 1vw);
     }
 
-    .descricao__content {
+    .description__content {
         padding: 10rem 2rem;
     }
 
-    .descricao__sobre h1 {
+    .description__about h1 {
         font-size: calc(3.2rem + 1vw);
     }
 

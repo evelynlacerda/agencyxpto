@@ -1,4 +1,4 @@
-const projectImages = document.querySelectorAll('.projetos__img')
+const projectImages = document.querySelectorAll('.project-image')
 const arrowNext = document.getElementById('btn-next')
 const arrowBack = document.getElementById('btn-back')
 let actualImage = 0
