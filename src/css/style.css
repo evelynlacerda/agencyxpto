@@ -52,6 +52,7 @@
     align-items: center;
     height: 700px;
     position: relative;
+    overflow: auto;
 }
 
 .container__projetos h1 {
@@ -71,8 +72,6 @@
     opacity: 0;
     filter: contrast(70%);
     transition: .5s ease-in-out;
-
-    overflow: auto;
 }
 
 .projetos__img.img1 {
@@ -285,9 +284,9 @@
         gap: .8rem;
     }
 
-    /* .container__projetos .seta {
+    .container__projetos .seta {
         width: calc(2rem + 1vw);
-    } */
+    }
 
     .descricao__content {
         padding: 10rem 2rem;
